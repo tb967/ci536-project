@@ -27,6 +27,7 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Home and Category pages styles */
 .products {
     display: flex;
     justify-content: center;
@@ -65,4 +66,67 @@ nav ul li a {
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+/* Login & Signup Page styles */
+.auth-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-container h2 {
+    margin-bottom: 20px;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container label {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.auth-container input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.auth-container button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.auth-container button:hover {
+    background: #555;
+}
+
+.auth-container p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.auth-container a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
 }
