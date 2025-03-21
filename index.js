@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("signup").addEventListener("submit", (event) => {
         event.preventDefault();
 
+        const fullName = document.getElementById("full-name").value;
         const email = document.getElementById("signup-email").value;
         const password = document.getElementById("signup-password").value;
         const confirmPassword = document.getElementById("confirm-password").value;
@@ -45,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // Store user data (temporary, not secure)
+        localStorage.setItem("userFullName", fullName);
         localStorage.setItem("userEmail", email);
         localStorage.setItem("userPassword", password);
 
@@ -61,9 +63,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const password = document.getElementById("password").value;
         const storedEmail = localStorage.getItem("userEmail");
         const storedPassword = localStorage.getItem("userPassword");
+        const storedFullName = localStorage.getItem("userFullName");
 
         if (email === storedEmail && password === storedPassword) {
-            alert("Login successful!");
+            alert(`Login successful! Welcome, ${storedFullName}.`);
             window.location.href = "index.html"; // Redirect to home page
         } else {
             alert("Invalid email or password. Please try again.");
