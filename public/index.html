@@ -1,23 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Student Marketplace</title>
-    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <script src="Js/script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Student Marketplace</h1>
-        
-        <!-- Add Item Form -->
-        <form id="add-item-form">
-            <input type="text" id="item-title" placeholder="What are you selling?">
-            <input type="number" id="item-price" placeholder="Price in $">
-            <button type="submit">Add Item</button>
-        </form>
+    <header>
+        <nav>
+            <h1>Student Marketplace</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
 
-        <!-- Items will show up here -->
-        <div id="item-list"></div>
-    </div>
-    <script src="script.js"></script>
+        <h1>Product Categories</h1>
+
+        <section class="products">
+            <div class="product-card">
+                <img src="Images/Electronics.jpg" alt="Electronics">
+                <h2>Electronics</h2>
+                <p>Price Range: £10.00 - £1000.00</p>
+                <button class="browse-btn" onclick="location.href='electronics.html'">Browse Products</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="Images/Accessories.jpg.webp" alt="Accessories">
+                <h2>Accessories</h2>
+                <p>Price Range: £1.00 - £100.00</p>
+                <button class="browse-btn" onclick="location.href='accessories.html'">Browse Products</button>
+            </div>
+
+            <div class="product-card">
+                <img src="Images/Furniture.webp" alt="Furniture">
+                <h2>Furniture</h2>
+                <p>Price Range: £15.00 - £500.00</p>
+                <button class="browse-btn" onclick="location.href='furniture.html'">Browse Products</button>
+            </div>
+
+            <div class="product-card">
+                <img src="Images/Material.jpg" alt="University Materials">
+                <h2>University Materials</h2>
+                <p>Price Range: £0.50 - £50.00</p>
+                <button class="browse-btn" onclick="location.href='materials.html'">Browse Products</button>
+            </div>
+
+            <div class="product-card">
+                <img src="Images/Travel.jpg" alt="Travel">
+                <h2>Travel Essentials</h2>
+                <p>Price Range: £5.00 - £100.00</p>
+                <button class="browse-btn" onclick="location.href='travel.html'">Browse Products</button>
+            </div>
+
+        </section>
+    </main>
+    
 </body>
 </html>
