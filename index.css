@@ -1,86 +1,126 @@
+/* Apply Rockwell font globally */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Rockwell', 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #AB9353;
+    color: #333;
 }
 
 header {
-    background-color: #333;
+    background: linear-gradient(90deg, #57652A, #013022);
     color: white;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-family: 'Algerian', 'Rockwell', 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+main h1 {
+    color: black;
+    margin-left: 20px;
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 10px 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    font-family: 'Rockwell', 'Arial', sans-serif;
+    display: inline-block;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Golden color on hover */
 }
 
 /* Home and Category pages styles */
 .products {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
 }
 
 .product-card {
-    background: white;
+    background: #6d3e56;
+    color:black;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 5px 15px rgba(0, 0, 0, 0.2); /* Darker 3D effect */
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
 }
+
+.product-card:hover {
+    transform: translateY(-8px); /* Lift the card up more */
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.6), 0 8px 25px rgba(0, 0, 0, 0.3); /* Stronger darker shadow for 3D lift */
+}
+
 
 .product-card img {
-    width: 250px;  /* Adjust as needed */
-    height: 200px; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensures the image fills the box without distortion */
-    border-radius: 10px; /* Optional: Makes corners rounded */
-    object-fit: contain; /* Ensures the full image is visible */
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin-bottom: 15px;
 }
 
-.browse-btn {
-    background: green;
+.browse-btn, .buy-btn {
+    background: #013022;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 15px;
+    margin-top: 10px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background 0.3s;
 }
-.buy-btn {
-    background: green;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
+
+.browse-btn:hover, .buy-btn:hover {
+    background: #57652A;
 }
 
 /* Login & Signup Page styles */
 .auth-container {
-    width: 300px;
+    width: 320px;
     margin: 50px auto;
-    padding: 20px;
+    padding: 25px;
     background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     text-align: center;
 }
 
 .auth-container h2 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 26px;
+    color: #333;
 }
 
 .auth-container form {
@@ -91,26 +131,30 @@ nav ul li a {
 .auth-container label {
     text-align: left;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #555;
 }
 
 .auth-container input {
-    padding: 10px;
-    margin-top: 5px;
+    padding: 12px;
+    margin-top: 8px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 16px;
 }
 
 .auth-container button {
-    margin-top: 15px;
-    padding: 10px;
+    margin-top: 20px;
+    padding: 12px;
     background: #333;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 .auth-container button:hover {
@@ -118,13 +162,15 @@ nav ul li a {
 }
 
 .auth-container p {
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 14px;
+    color: #666;
 }
 
 .auth-container a {
     color: #007BFF;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .auth-container a:hover {
