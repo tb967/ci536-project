@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightMart</title>
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="icon" type="image/ico" href="uploads/images/favicon.png">
+    <script src="Js/index.js" defer></script>
+      <script src="Js/product.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>BrightMart</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.php">Cart (<span class="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+
+        <h1>Product Categories</h1>
+
+        <section class="products">
+            <div class="product-card">
+                <img src="uploads/images/Electronics.jpeg" alt="Electronics">
+                <h2>Electronics</h2>
+                <p>Price Range: £10.00 - £1000.00</p>
+                <button class="browse-btn" onclick="location.href='electronics.php'">Browse Products</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="uploads/images/Accessories.jpeg" alt="Accessories">
+                <h2>Accessories</h2>
+                <p>Price Range: £1.00 - £100.00</p>
+                <button class="browse-btn" onclick="location.href='accessories.php'">Browse Products</button>
+            </div>
+
+            <div class="product-card">
+                <img src="uploads/images/Furniture.jpeg" alt="Furniture">
+                <h2>Furniture</h2>
+                <p>Price Range: £15.00 - £500.00</p>
+                <button class="browse-btn" onclick="location.href='furniture.php'">Browse Products</button>
+            </div>
+
+            <div class="product-card">
+                <img src="uploads/images/Material.jpeg" alt="University Materials">
+                <h2>University Materials</h2>
+                <p>Price Range: £0.50 - £50.00</p>
+                <button class="browse-btn" onclick="location.href='materials.php'">Browse Products</button>
+            </div>
+
+            <div class="product-card">
+                <img src="uploads/images/Travel.jpeg" alt="Travel">
+                <h2>Travel Essentials</h2>
+                <p>Price Range: £5.00 - £100.00</p>
+                <button class="browse-btn" onclick="location.href='travel.php'">Browse Products</button>
+            </div>
+
+        </section>
+    </main>
+    
+</body>
+</html>

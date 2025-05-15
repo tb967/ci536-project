@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup - BrightMart</title>
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="icon" type="image/ico" href="uploads/images/favicon.png">
+    <script src="Js/index.js" defer></script>
+    <script src="Js/product.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>BrightMart</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="cart.php">Cart (<span class="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="auth-container">
+            <!-- Login Form -->
+            <div id="login-form">
+                <h2>Login</h2>
+                <form id="login">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#" id="show-signup">Sign up here</a></p>
+            </div>
+
+            <!-- Signup Form (Hidden Initially) -->
+            <div id="signup-form" style="display: none;">
+                <h2>Sign Up</h2>
+                <form id="signup">
+                    <label for="username">User Name:</label>
+                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" name="email" required>
+
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" name="password" required>
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" required>
+
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
